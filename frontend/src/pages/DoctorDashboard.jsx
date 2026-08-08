@@ -18,7 +18,7 @@ function DoctorDashboard() {
   const fetchDashboard = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/doctor/dashboard",
+        "https://smartqueue-backend-vjuh.onrender.com/api/doctor/dashboard",
         {
           headers: {
             Authorization: `Bearer ${getToken()}`
@@ -42,7 +42,7 @@ function DoctorDashboard() {
   const fetchAppointments = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/doctor/appointments",
+        "https://smartqueue-backend-vjuh.onrender.com/api/doctor/appointments",
         {
           headers: {
             Authorization: `Bearer ${getToken()}`
@@ -63,7 +63,7 @@ function DoctorDashboard() {
   const fetchHistory = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/doctor/history",
+        "https://smartqueue-backend-vjuh.onrender.com/api/doctor/history",
         {
           headers: {
             Authorization: `Bearer ${getToken()}`
@@ -96,7 +96,7 @@ function DoctorDashboard() {
   const callNextPatient = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/doctor/call-next",
+        "https://smartqueue-backend-vjuh.onrender.com/api/doctor/call-next",
         {
           method: "PUT",
           headers: {
@@ -122,7 +122,7 @@ function DoctorDashboard() {
   const completePatient = async (id) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/doctor/complete/${id}`,
+        `https://smartqueue-backend-vjuh.onrender.com/api/doctor/complete/${id}`,
         {
           method: "PUT",
           headers: {
@@ -148,7 +148,7 @@ function DoctorDashboard() {
   const verifyEmergency = async (id, emergencyLevel) => {
     try {
       const response = await fetch(
-        `http://localhost:5000/api/doctor/verify-emergency/${id}`,
+        `https://smartqueue-backend-vjuh.onrender.com/api/doctor/verify-emergency/${id}`,
         {
           method: "PUT",
           headers: {

@@ -33,7 +33,7 @@ function BookAppointment() {
       setDoctorsLoading(true);
 
       const response = await fetch(
-        "http://localhost:5000/api/doctor"
+        "https://smartqueue-backend-vjuh.onrender.com/api/doctor"
       );
 
       const data = await response.json();
@@ -78,7 +78,7 @@ function BookAppointment() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/appointment",
+        "https://smartqueue-backend-vjuh.onrender.com/api/appointment",
         {
           method: "POST",
 

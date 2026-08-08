@@ -66,7 +66,7 @@ function Dashboard() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/appointment/my-appointments",
+        "https://smartqueue-backend-vjuh.onrender.com/api/appointment/my-appointments",
         {
           headers: {
             Authorization: `Bearer ${token}`

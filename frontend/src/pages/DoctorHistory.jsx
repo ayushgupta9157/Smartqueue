@@ -18,7 +18,7 @@ function DoctorHistory() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/doctor/history",
+        "https://smartqueue-backend-vjuh.onrender.com/api/doctor/history",
         {
           headers: {
             Authorization: `Bearer ${token}`

@@ -25,7 +25,7 @@ function QueueStatus() {
     try {
 
       const response = await fetch(
-        `http://localhost:5000/api/appointment/queue/${appointmentId}`,
+        `https://smartqueue-backend-vjuh.onrender.com/api/appointment/queue/${appointmentId}`,
         {
           headers: {
             Authorization: `Bearer ${token}`

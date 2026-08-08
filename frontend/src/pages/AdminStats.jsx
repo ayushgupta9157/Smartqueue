@@ -31,7 +31,7 @@ function AdminStats() {
     try {
 
       const response = await fetch(
-        "http://localhost:5000/api/admin/stats",
+        "https://smartqueue-backend-vjuh.onrender.com/api/admin/stats",
         {
           headers: {
             Authorization: `Bearer ${token}`

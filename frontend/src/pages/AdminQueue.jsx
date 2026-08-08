@@ -28,7 +28,7 @@ function AdminQueue(){
 
             const response = await fetch(
 
-                "http://localhost:5000/api/appointment/admin/queue",
+                "https://smartqueue-backend-vjuh.onrender.com/api/appointment/admin/queue",
 
                 {
 
@@ -201,7 +201,7 @@ const serveNext = async()=>{
 
     const response = await fetch(
 
-        "http://localhost:5000/api/appointment/admin/serve-next",
+        "https://smartqueue-backend-vjuh.onrender.com/api/appointment/admin/serve-next",
 
         {
 
@@ -235,7 +235,7 @@ const serveNext = async()=>{
 
         const response = await fetch(
 
-            "http://localhost:5000/api/appointment/admin/serve-next",
+            "https://smartqueue-backend-vjuh.onrender.com/api/appointment/admin/serve-next",
 
             {
                 method:"PUT",

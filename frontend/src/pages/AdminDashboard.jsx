@@ -25,7 +25,7 @@ const [searchText, setSearchText] = useState("");
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/appointment/admin/all",
+        "https://smartqueue-backend-vjuh.onrender.com/api/appointment/admin/all",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -48,7 +48,7 @@ const [searchText, setSearchText] = useState("");
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/stats",
+        "https://smartqueue-backend-vjuh.onrender.com/api/admin/stats",
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -71,7 +71,7 @@ const [searchText, setSearchText] = useState("");
 
     try {
       const response = await fetch(
-        `http://localhost:5000/api/appointment/admin/status/${id}`,
+        `https://smartqueue-backend-vjuh.onrender.com/api/appointment/admin/status/${id}`,
         {
           method: "PUT",
 
@@ -111,7 +111,7 @@ const [searchText, setSearchText] = useState("");
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/add-doctor",
+        "https://smartqueue-backend-vjuh.onrender.com/api/admin/add-doctor",
         {
           method: "POST",
 
